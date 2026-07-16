@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b2f2a" />
+  <meta name="description" content="A birthday adventure for Ree." />
+  <title>Happy Birthday, Ree ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">A little birthday surprise</p>
+        <h1>Happy Birthday,<br><span>Ree</span> ❤️</h1>
+        <p class="hero-copy">I wanted to give you more than a present.<br>I wanted to give us another adventure.</p>
+        <button class="primary-button" id="startButton">Open your surprise <span>→</span></button>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="section-intro reveal">
+        <p class="eyebrow dark">Chapter one</p>
+        <h2>Imagine somewhere enchanting…</h2>
+        <p>Wild Atlantic coastlines, winding roads, mountains, colourful streets and beaches so white they scarcely look real.</p>
+      </div>
+
+      <div class="image-grid">
+        <article class="photo-card wide reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Connemara2.jpg?width=1800" alt="The mountains and lakes of Connemara" loading="lazy">
+          <div class="caption"><strong>Roads through Connemara</strong><span>Mountains, lakes and beautiful scenery at every turn.</span></div>
+        </article>
+        <article class="photo-card reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Dogs_bay_connemara_2023-05-28_10.jpg?width=1800" alt="White sand and turquoise water at Dog's Bay" loading="lazy">
+          <div class="caption"><strong>Hidden white beaches</strong><span>Clear water, soft sand and the Atlantic breeze.</span></div>
+        </article>
+        <article class="photo-card reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Galway_City%2C_Ireland_%28Unsplash%29.jpg?width=1800" alt="Galway city streets" loading="lazy">
+          <div class="caption"><strong>Colourful Galway</strong><span>Music, cosy pubs and streets full of character.</span></div>
+        </article>
+        <article class="photo-card wide reveal">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kylemore_Abbey_Across_lake.jpg?width=1800" alt="Kylemore Abbey beside a lake" loading="lazy">
+          <div class="caption"><strong>Enchanting places</strong><span>Castles, abbeys and stories waiting to be discovered.</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="clue-section">
+      <div class="clue-inner reveal">
+        <div class="shamrock" aria-hidden="true">☘</div>
+        <p class="eyebrow">Chapter two</p>
+        <h2>Have you guessed it yet?</h2>
+        <p>There will be a flight, a hire car, and a few unforgettable days exploring together.</p>
+        <button class="primary-button light" id="revealButton">Reveal my present <span>✨</span></button>
+      </div>
+    </section>
+
+    <section class="destination" id="destination">
+      <canvas id="confetti" aria-hidden="true"></canvas>
+      <div class="destination-content">
+        <p class="eyebrow reveal">Pack your bags…</p>
+        <h2 class="reveal">We’re going to<br><span>Galway!</span> 🇮🇪</h2>
+
+        <div class="travel-card reveal">
+          <div class="route">
+            <div><span class="route-label">From</span><strong>Bristol</strong></div>
+            <div class="plane">✈</div>
+            <div><span class="route-label">To</span><strong>Dublin</strong></div>
+          </div>
+          <div class="ticket-line"></div>
+          <div class="ticket-details">
+            <div><span>Departure</span><strong>14 August</strong></div>
+            <div><span>Return</span><strong>17 August</strong></div>
+            <div><span>On arrival</span><strong>Hire car</strong></div>
+            <div><span>Destination</span><strong>Galway</strong></div>
+          </div>
+          <div class="status"><span></span> Ready for adventure</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans">
+      <div class="section-intro reveal">
+        <p class="eyebrow dark">Our Irish adventure</p>
+        <h2>A few possibilities…</h2>
+        <p>No strict itinerary. Just us, a car and some beautiful places to discover.</p>
+      </div>
+      <div class="plan-grid">
+        <div class="plan-card reveal"><span>🌊</span><h3>Wild Atlantic Way</h3><p>Coastal roads, dramatic views and spontaneous stops.</p></div>
+        <div class="plan-card reveal"><span>🏔️</span><h3>Connemara</h3><p>Mountains, lakes and peaceful roads through the west.</p></div>
+        <div class="plan-card reveal"><span>🏖️</span><h3>Dog’s Bay</h3><p>One of Ireland’s most beautiful stretches of white sand.</p></div>
+        <div class="plan-card reveal"><span>🏰</span><h3>Kylemore Abbey</h3><p>A fairytale setting tucked between woodland and water.</p></div>
+        <div class="plan-card reveal"><span>🎻</span><h3>Galway City</h3><p>Colourful streets, traditional music and cosy evenings.</p></div>
+        <div class="plan-card reveal"><span>❤️</span><h3>Time together</h3><p>The most important part of the whole trip.</p></div>
+      </div>
+    </section>
+
+    <section class="finale">
+      <div class="finale-photo reveal">
+        <img src="assets/our-adventure.jpg" alt="Kristian and Ree together beside a hot air balloon">
+      </div>
+      <div class="finale-copy reveal">
+        <p class="eyebrow dark">The next adventure</p>
+        <h2>Happy Birthday, Ree ❤️</h2>
+        <p>Let’s have a great time, make great memories and see some enchanting places together.</p>
+        <p>I hope you love it.</p>
+        <p class="signature">Love Kristian x</p>
+        <button class="secondary-button" id="replayButton">Experience the reveal again ↟</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Galway • 14–17 August</span>
+    <span>Made with love for Ree</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
