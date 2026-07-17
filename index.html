@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0b2f2a" />
+  <meta name="theme-color" content="#071f1b" />
   <meta name="description" content="A birthday adventure for Ree." />
   <title>Happy Birthday, Ree ❤️</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
         <p class="eyebrow">A little birthday surprise</p>
         <h1>Happy Birthday,<br><span>Ree</span> ❤️</h1>
         <p class="hero-copy">I wanted to give you more than a present.<br>I wanted to give us another adventure.</p>
-        <button class="primary-button" id="startButton">Open your surprise <span>→</span></button>
+        <button class="primary-button" id="startButton">Begin the journey <span>→</span></button>
       </div>
       <div class="scroll-hint" aria-hidden="true"><span></span></div>
     </section>
@@ -36,20 +36,20 @@
 
       <div class="image-grid">
         <article class="photo-card wide reveal">
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Connemara2.jpg?width=1800" alt="The mountains and lakes of Connemara" loading="lazy">
+          <img src="assets/connemara.jpg" alt="The mountains and lakes of Connemara" loading="lazy">
           <div class="caption"><strong>Roads through Connemara</strong><span>Mountains, lakes and beautiful scenery at every turn.</span></div>
         </article>
         <article class="photo-card reveal">
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Dogs_bay_connemara_2023-05-28_10.jpg?width=1800" alt="White sand and turquoise water at Dog's Bay" loading="lazy">
-          <div class="caption"><strong>Hidden white beaches</strong><span>Clear water, soft sand and the Atlantic breeze.</span></div>
+          <img src="assets/dogs-bay.jpg" alt="Clear Atlantic water at Dog's Bay in Connemara" loading="lazy">
+          <div class="caption"><strong>Dog’s Bay</strong><span>Clear water, white sand and the Atlantic breeze.</span></div>
         </article>
         <article class="photo-card reveal">
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Galway_City%2C_Ireland_%28Unsplash%29.jpg?width=1800" alt="Galway city streets" loading="lazy">
+          <img src="assets/galway-street.jpg" alt="A colourful street in Galway" loading="lazy">
           <div class="caption"><strong>Colourful Galway</strong><span>Music, cosy pubs and streets full of character.</span></div>
         </article>
         <article class="photo-card wide reveal">
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kylemore_Abbey_Across_lake.jpg?width=1800" alt="Kylemore Abbey beside a lake" loading="lazy">
-          <div class="caption"><strong>Enchanting places</strong><span>Castles, abbeys and stories waiting to be discovered.</span></div>
+          <img src="assets/kylemore.jpg" alt="Kylemore Abbey beside a lake" loading="lazy">
+          <div class="caption"><strong>Kylemore Abbey</strong><span>A fairytale setting tucked between woodland and water.</span></div>
         </article>
       </div>
     </section>
@@ -59,7 +59,7 @@
         <div class="shamrock" aria-hidden="true">☘</div>
         <p class="eyebrow">Chapter two</p>
         <h2>Have you guessed it yet?</h2>
-        <p>There will be a flight, a hire car, and a few unforgettable days exploring together.</p>
+        <p>There will be a flight, a hire car and a few unforgettable days exploring together.</p>
         <button class="primary-button light" id="revealButton">Reveal my present <span>✨</span></button>
       </div>
     </section>
@@ -70,21 +70,57 @@
         <p class="eyebrow reveal">Pack your bags…</p>
         <h2 class="reveal">We’re going to<br><span>Galway!</span> 🇮🇪</h2>
 
-        <div class="travel-card reveal">
-          <div class="route">
-            <div><span class="route-label">From</span><strong>Bristol</strong></div>
-            <div class="plane">✈</div>
-            <div><span class="route-label">To</span><strong>Dublin</strong></div>
+        <div class="flight-board reveal" aria-label="Birthday trip flight board">
+          <div class="board-topline"><span>DEPARTURES</span><span id="boardClock">--:--</span></div>
+          <div class="board-row board-head"><span>FROM</span><span>TO</span><span>DATE</span><span>STATUS</span></div>
+          <div class="board-row board-data">
+            <span class="flip-text" data-value="BRISTOL">BRISTOL</span>
+            <span class="flip-text" data-value="DUBLIN">DUBLIN</span>
+            <span class="flip-text" data-value="14 AUG">14 AUG</span>
+            <span class="status-live"><i></i><b class="flip-text" data-value="BOARDING">BOARDING</b></span>
           </div>
-          <div class="ticket-line"></div>
-          <div class="ticket-details">
-            <div><span>Departure</span><strong>14 August</strong></div>
-            <div><span>Return</span><strong>17 August</strong></div>
-            <div><span>On arrival</span><strong>Hire car</strong></div>
-            <div><span>Destination</span><strong>Galway</strong></div>
-          </div>
-          <div class="status"><span></span> Ready for adventure</div>
+          <div class="board-footer"><span>ONWARD: GALWAY</span><span>HIRE CAR READY</span></div>
         </div>
+      </div>
+    </section>
+
+    <section class="journey" id="journey">
+      <div class="section-intro reveal">
+        <p class="eyebrow dark">Our route</p>
+        <h2>From Bristol to the wild west</h2>
+        <p>A flight to Dublin, a road trip across Ireland and a few magical stops along the way.</p>
+      </div>
+
+      <div class="route-map reveal">
+        <svg viewBox="0 0 1000 520" role="img" aria-label="Stylised route from Bristol to Dublin, Galway, Connemara, Dog's Bay and Kylemore Abbey">
+          <defs>
+            <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <linearGradient id="sea" x1="0" x2="1"><stop offset="0" stop-color="#dceee8"/><stop offset="1" stop-color="#eff6f2"/></linearGradient>
+          </defs>
+          <rect width="1000" height="520" rx="34" fill="url(#sea)"/>
+          <path class="island" d="M642 69c-52 17-83 58-92 109-11 57-48 87-72 135-20 41-12 98 26 127 39 31 94 20 136 1 33-15 62-42 77-75 20-45 17-98 3-145-12-39-32-83-78-101z"/>
+          <path class="uk" d="M858 132c-28 27-24 63-10 90 12 24 34 49 20 76-14 28-53 33-62 64-6 24 15 48 39 53 35 7 71-15 84-48 11-28 5-60 16-88 8-20 24-38 22-60-2-33-36-60-69-54-16 3-28 12-40 22z"/>
+          <path class="route-line" d="M855 290 C780 255, 735 250, 690 260 S610 300, 555 310 S475 337, 440 360 S390 404, 345 420"/>
+          <g class="plane-icon" transform="translate(770 265)"><text x="0" y="0">✈</text></g>
+          <g class="pin bristol"><circle cx="855" cy="290" r="10"/><text x="875" y="296">Bristol</text></g>
+          <g class="pin dublin"><circle cx="690" cy="260" r="10"/><text x="710" y="266">Dublin</text></g>
+          <g class="pin galway"><circle cx="555" cy="310" r="10"/><text x="575" y="316">Galway</text></g>
+          <g class="pin connemara"><circle cx="440" cy="360" r="10"/><text x="460" y="366">Connemara</text></g>
+          <g class="pin dogs"><circle cx="385" cy="405" r="10"/><text x="405" y="411">Dog’s Bay</text></g>
+          <g class="pin kylemore"><circle cx="345" cy="420" r="10"/><text x="175" y="426">Kylemore Abbey</text></g>
+        </svg>
+        <div class="map-key"><span><i class="key-flight"></i> Flight</span><span><i class="key-road"></i> Road trip</span></div>
+      </div>
+    </section>
+
+    <section class="stay">
+      <div class="stay-photo reveal"><img src="assets/galway-street.jpg" alt="Colourful Galway street"></div>
+      <div class="stay-copy reveal">
+        <p class="eyebrow dark">Our stay</p>
+        <h2>A cosy base for our Galway adventure</h2>
+        <p>Our own place to come back to after days on the road, evenings in Galway and all the little moments in between.</p>
+        <a class="primary-button link-button" href="https://www.airbnb.co.uk/rooms/6910137" target="_blank" rel="noopener noreferrer">View our Airbnb <span>↗</span></a>
+        <small>The button opens the public Airbnb listing in a new tab.</small>
       </div>
     </section>
 
@@ -105,9 +141,7 @@
     </section>
 
     <section class="finale">
-      <div class="finale-photo reveal">
-        <img src="assets/our-adventure.jpg" alt="Kristian and Ree together beside a hot air balloon">
-      </div>
+      <div class="finale-photo reveal"><img src="assets/our-adventure.jpg" alt="Kristian and Ree together beside a hot air balloon"></div>
       <div class="finale-copy reveal">
         <p class="eyebrow dark">The next adventure</p>
         <h2>Happy Birthday, Ree ❤️</h2>
@@ -119,11 +153,7 @@
     </section>
   </main>
 
-  <footer>
-    <span>Galway • 14–17 August</span>
-    <span>Made with love for Ree</span>
-  </footer>
-
+  <footer><span>Galway • 14–17 August</span><span>Made with love for Ree</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
