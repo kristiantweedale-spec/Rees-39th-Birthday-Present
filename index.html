@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIINfQ3ynhN2iN0kMZV8MZbMZlZ+MZ5xM0o=" crossorigin="" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -36,11 +37,11 @@
 
       <div class="image-grid">
         <article class="photo-card wide reveal">
-          <img src="assets/connemara.jpg" alt="The mountains and lakes of Connemara" loading="lazy">
-          <div class="caption"><strong>Roads through Connemara</strong><span>Mountains, lakes and beautiful scenery at every turn.</span></div>
+          <img src="assets/diamond-hill.jpg" alt="View across the Connemara coast from Diamond Hill" loading="lazy">
+          <div class="caption"><strong>Connemara from Diamond Hill</strong><span>A sweeping view across mountains, islands and the Atlantic coast.</span></div>
         </article>
         <article class="photo-card reveal">
-          <img src="assets/dogs-bay.jpg" alt="Clear Atlantic water at Dog's Bay in Connemara" loading="lazy">
+          <img src="assets/dogs-bay-v3.jpg" alt="The white sands and turquoise water of Dog's Bay in Connemara" loading="lazy">
           <div class="caption"><strong>Dog’s Bay</strong><span>Clear water, white sand and the Atlantic breeze.</span></div>
         </article>
         <article class="photo-card reveal">
@@ -91,25 +92,13 @@
         <p>A flight to Dublin, a road trip across Ireland and a few magical stops along the way.</p>
       </div>
 
-      <div class="route-map reveal">
-        <svg viewBox="0 0 1000 520" role="img" aria-label="Stylised route from Bristol to Dublin, Galway, Connemara, Dog's Bay and Kylemore Abbey">
-          <defs>
-            <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-            <linearGradient id="sea" x1="0" x2="1"><stop offset="0" stop-color="#dceee8"/><stop offset="1" stop-color="#eff6f2"/></linearGradient>
-          </defs>
-          <rect width="1000" height="520" rx="34" fill="url(#sea)"/>
-          <path class="island" d="M642 69c-52 17-83 58-92 109-11 57-48 87-72 135-20 41-12 98 26 127 39 31 94 20 136 1 33-15 62-42 77-75 20-45 17-98 3-145-12-39-32-83-78-101z"/>
-          <path class="uk" d="M858 132c-28 27-24 63-10 90 12 24 34 49 20 76-14 28-53 33-62 64-6 24 15 48 39 53 35 7 71-15 84-48 11-28 5-60 16-88 8-20 24-38 22-60-2-33-36-60-69-54-16 3-28 12-40 22z"/>
-          <path class="route-line" d="M855 290 C780 255, 735 250, 690 260 S610 300, 555 310 S475 337, 440 360 S390 404, 345 420"/>
-          <g class="plane-icon" transform="translate(770 265)"><text x="0" y="0">✈</text></g>
-          <g class="pin bristol"><circle cx="855" cy="290" r="10"/><text x="875" y="296">Bristol</text></g>
-          <g class="pin dublin"><circle cx="690" cy="260" r="10"/><text x="710" y="266">Dublin</text></g>
-          <g class="pin galway"><circle cx="555" cy="310" r="10"/><text x="575" y="316">Galway</text></g>
-          <g class="pin connemara"><circle cx="440" cy="360" r="10"/><text x="460" y="366">Connemara</text></g>
-          <g class="pin dogs"><circle cx="385" cy="405" r="10"/><text x="405" y="411">Dog’s Bay</text></g>
-          <g class="pin kylemore"><circle cx="345" cy="420" r="10"/><text x="175" y="426">Kylemore Abbey</text></g>
-        </svg>
-        <div class="map-key"><span><i class="key-flight"></i> Flight</span><span><i class="key-road"></i> Road trip</span></div>
+      <div class="real-map-shell reveal">
+        <div id="realMap" class="real-map" role="region" aria-label="Interactive map showing the journey from Bristol to Dublin and the places to explore in Galway and Connemara"></div>
+        <div class="map-overlay-card">
+          <span>OUR JOURNEY</span>
+          <strong>Bristol → Dublin → Galway</strong>
+          <small>Tap the gold markers to explore each stop.</small>
+        </div>
       </div>
     </section>
 
@@ -154,6 +143,7 @@
   </main>
 
   <footer><span>Galway • 14–17 August</span><span>Made with love for Ree</span></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="script.js"></script>
 </body>
 </html>
