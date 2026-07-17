@@ -1,19 +1,42 @@
-IMAGE CREDITS
-
-These images are redistributed from Wikimedia Commons. For full author and licence
-details, use the source page listed beside each image.
+IMAGE CREDITS — VERSION 2
 
 connemara.jpg
+Photographer: Thorsten Pohl (Thpohl)
 Source: https://commons.wikimedia.org/wiki/File:Connemara2.jpg
+Licence: Public domain
 
-dogs-bay.jpg
+Dogs-bay.jpg
+Photographer: Z thomas
 Source: https://commons.wikimedia.org/wiki/File:Dogs_bay_connemara_2023-05-28_10.jpg
-
-galway-city.jpg
-Source: https://commons.wikimedia.org/wiki/File:Galway_City,_Ireland_(Unsplash).jpg
+Licence: CC BY-SA 4.0
 
 kylemore.jpg
+Photographer: Skyden67
 Source: https://commons.wikimedia.org/wiki/File:Kylemore_Abbey_Across_lake.jpg
+Licence: CC BY-SA 4.0
+
+galway-street.jpg
+Photograph supplied by Kristian for use in this personal birthday website.
 
 our-adventure.jpg
 Personal photograph supplied by Kristian.
+
+
+VERSION 3 IMAGE UPDATES
+
+Diamond Hill / Connemara coast:
+"View from Diamond Hill on a fine day" by Katherine Kenneally.
+Source: Wikimedia Commons. License: CC BY-SA 4.0.
+https://commons.wikimedia.org/wiki/File:View_from_Diamond_Hill_on_a_fine_day.jpg
+Image was resized/cropped by the browser for display.
+
+Dog's Bay:
+"Beach at Dog's Bay, Co. Galway" by nick macneill.
+Source: Wikimedia Commons / Geograph. License: CC BY-SA 2.0.
+https://commons.wikimedia.org/wiki/File:Beach_at_Dog%27s_Bay,_Co._Galway_-_geograph.org.uk_-_2355083.jpg
+Image was resized/cropped by the browser for display.
+
+MAP
+Map data and tiles: © OpenStreetMap contributors.
+https://www.openstreetmap.org/copyright
+Map displayed using Leaflet 1.9.4 (BSD-2-Clause).
